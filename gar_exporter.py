@@ -72,9 +72,7 @@ if __name__ == '__main__':
   DISCOVERY_URI = ('https://analyticsreporting.googleapis.com/$discovery/rest')
   KEY_FILE_LOCATION = './client_secrets.p12'
   SERVICE_ACCOUNT_EMAIL = str(os.getenv('ACCOUNT_EMAIL'))
-  #SERVICE_ACCOUNT_EMAIL = 'remote-monitoring@fifth-listener-144913.iam.gserviceaccount.com'
   VIEW_ID = str(os.getenv('VIEW_ID'))
-  #VIEW_ID = '128860045'
 
   start_http_server(int(os.getenv('BIND_PORT')))
   REGISTRY.register(GarCollector())
