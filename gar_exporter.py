@@ -34,7 +34,7 @@ class GarCollector(object):
           {
             'viewId': VIEW_ID,
             'dateRanges': [{'startDate': str(os.getenv('START_DATE')), 'endDate': 'today'}],
-          'metrics': [{'expression': 'ga:sessions'}, {'expression': 'ga:pageviews'}, {'expression': 'ga:users'}]
+            'metrics': [{'expression': 'ga:sessions'}, {'expression': 'ga:pageviews'}, {'expression': 'ga:users'}, {'expression': 'ga:avgDomainLookupTime'}, {'expression': 'ga:avgPageDownloadTime'}, {'expression': 'ga:avgRedirectionTime'}, {'expression': 'ga:avgServerConnectionTime'}, {'expression': 'ga:avgServerResponseTime'}, {'expression': 'ga:avgPageLoadTime'}]
           }]
         }
     ).execute()
